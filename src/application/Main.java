@@ -10,25 +10,19 @@ import javafx.stage.Stage;
 
 /**
  * 
- * @author ernesto
+ * @author marki
  * @version 1.0
- * @see BlurController
+ * @see Control
  *
  */
 public class Main extends Application {
 
 	private AnchorPane mypane;
 	
-	/**
-	 * crea el Stage
-	 */
-	
     @Override
     public void start(Stage stage) throws IOException {
     
-    	/**
-    	 * carga el controlador y la vista fxml 
-    	 */
+    	
     	
     	FXMLLoader loader = new FXMLLoader(
             getClass().getResource(
@@ -38,9 +32,7 @@ public class Main extends Application {
 
         mypane = (AnchorPane) loader.load();
 
-        /**
-         * titula y coloca la escena en el stage
-         */
+        
         stage.setTitle("BLUR FOREST");
         stage.setScene(new Scene(mypane));
         stage.show();

@@ -12,12 +12,11 @@ public class Control {
 	@FXML
 	private ImageView image;
 	
-	private int cont = 0;
 
 	@FXML
     public void setblur() {
-		cont ++;
-		image.setEffect(new GaussianBlur(cont));   
+		
+		image.setEffect(new GaussianBlur(0));   
 
     }
 	
@@ -28,8 +27,8 @@ public class Control {
 	}
 	
 	public void focus() {
-		cont--;
-		image.setEffect(new GaussianBlur(cont));
+		
+		image.setEffect(new GaussianBlur(20));
 	}
 	
 }
